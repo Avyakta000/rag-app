@@ -63,7 +63,7 @@ def get_db():
 @app.get("/")
 def read_item():
 #   item=models.get_item()  
-  return {"message":"hello fastapi !","file_name":item.file_name}
+  return {"message":"hello fastapi !"}
 
 
 @app.post("/items/")
