@@ -50,12 +50,12 @@ allow_headers=["*"], # Allows all headers
 )
 # Dependency
 
-# def get_db():
-#     db = SessionLocal()
-#     try:
-#         yield db
-#     finally:
-#         db.close()
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
 
 
 
